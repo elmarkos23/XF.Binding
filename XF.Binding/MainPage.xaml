@@ -6,16 +6,13 @@
 
     <StackLayout Padding="20">
         <Label Text="Data Binding 101 Demo" FontAttributes="Bold" HorizontalOptions="Center" />
-        <Label Text="Forename:" />
+        <Label Text="Nombre:" />
         <Entry Text="{Binding Forename, Mode=TwoWay}" />
-        <Label Text="Surname:" />
+        <Label Text="Apellido:" />
         <Entry Text="{Binding Surname, Mode=TwoWay}" />
-        <StackLayout Padding="0,20,0,0" Orientation="Horizontal">
-            <Label Text="Your forename is:" />
+        <StackLayout Padding="0,20,0,0" Orientation="Vertical" VerticalOptions="Center">
+            <Label Text="Yo soy" />
             <Label Text="{Binding Forename}" />
-        </StackLayout>
-        <StackLayout Orientation="Horizontal">
-            <Label Text="Your surname is:" />
             <Label Text="{Binding Surname}" />
         </StackLayout>
         <Frame OutlineColor="Gray">
