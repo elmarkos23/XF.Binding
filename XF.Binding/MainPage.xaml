@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XF.Binding"
+             x:Class="XF.Binding.MainPage">
+
+    <StackLayout Padding="20">
+        <Label Text="Data Binding 101 Demo" FontAttributes="Bold" HorizontalOptions="Center" />
+        <Label Text="Forename:" />
+        <Entry Text="{Binding Forename, Mode=TwoWay}" />
+        <Label Text="Surname:" />
+        <Entry Text="{Binding Surname, Mode=TwoWay}" />
+        <StackLayout Padding="0,20,0,0" Orientation="Horizontal">
+            <Label Text="Your forename is:" />
+            <Label Text="{Binding Forename}" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Your surname is:" />
+            <Label Text="{Binding Surname}" />
+        </StackLayout>
+        <Frame OutlineColor="Gray">
+            <StackLayout Orientation="Vertical">
+                <Label Text="Result Dialog:" />
+                <Entry Text="{Binding Marco}" Placeholder="Click Aqui" Focused="Entry_Focused" x:Name="mytexto" />
+            </StackLayout>
+        </Frame>
+
+
+
+
+
+    </StackLayout>
+
+</ContentPage>
