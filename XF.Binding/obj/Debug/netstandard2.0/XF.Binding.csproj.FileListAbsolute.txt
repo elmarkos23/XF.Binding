@@ -1,6 +1,7 @@
 C:\Users\admin\Documents\GitHub\XF.Binding\XF.Binding\XF.Binding\bin\Debug\netstandard2.0\XF.Binding.deps.json
 C:\Users\admin\Documents\GitHub\XF.Binding\XF.Binding\XF.Binding\bin\Debug\netstandard2.0\XF.Binding.dll
 C:\Users\admin\Documents\GitHub\XF.Binding\XF.Binding\XF.Binding\bin\Debug\netstandard2.0\XF.Binding.pdb
+C:\Users\admin\Documents\GitHub\XF.Binding\XF.Binding\XF.Binding\obj\Debug\netstandard2.0\XF.Binding.csprojAssemblyReference.cache
 C:\Users\admin\Documents\GitHub\XF.Binding\XF.Binding\XF.Binding\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\admin\Documents\GitHub\XF.Binding\XF.Binding\XF.Binding\obj\Debug\netstandard2.0\Dialog.xaml.g.cs
 C:\Users\admin\Documents\GitHub\XF.Binding\XF.Binding\XF.Binding\obj\Debug\netstandard2.0\MainPage.xaml.g.cs

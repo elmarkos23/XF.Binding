@@ -10,10 +10,10 @@
         <Entry Text="{Binding Forename, Mode=TwoWay}" />
         <Label Text="Apellido:" />
         <Entry Text="{Binding Surname, Mode=TwoWay}" />
-        <StackLayout Padding="0,20,0,0" Orientation="Vertical" VerticalOptions="Center">
-            <Label Text="Yo soy" />
-            <Label Text="{Binding Forename}" />
-            <Label Text="{Binding Surname}" />
+        <StackLayout Padding="0,20,0,0" Orientation="Horizontal" VerticalOptions="Center">
+            <Label Text="Yo soy" HorizontalOptions="Start"/>
+            <Label Text="{Binding Forename}" HorizontalOptions="End"/>
+            <Label Text="{Binding Surname}" HorizontalOptions="End"/>
         </StackLayout>
         <Frame OutlineColor="Gray">
             <StackLayout Orientation="Vertical">
