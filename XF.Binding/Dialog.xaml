@@ -9,21 +9,18 @@
                  Padding="20,100">
     <Frame Padding="10" BackgroundColor="WhiteSmoke" VerticalOptions="Center" HorizontalOptions="Center">
         <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
-            <Label Text="Forename:" />
-            <ListView SelectedItem="{Binding Marco, Mode=Default}" ItemSelected="ListView_ItemSelected">
-                <ListView.ItemsSource>
-                    <x:Array Type="{x:Type x:String}">
-                        <x:String>mono</x:String>
-                        <x:String>monodroid</x:String>
-                        <x:String>monotouch</x:String>
-                        <x:String>monorail</x:String>
-                        <x:String>monodevelop</x:String>
-                        <x:String>monotone</x:String>
-                        <x:String>monopoly</x:String>
-                        <x:String>monomodal</x:String>
-                        <x:String>mononucleosis</x:String>
-                    </x:Array>
-                </ListView.ItemsSource>
+            <Label Text="Item Seleccionado:" />
+            <Entry x:Name="EntValor" Text="{Binding Valor, Mode=TwoWay}" IsVisible="False"/>
+            <ListView x:Name="lvDatos" ItemsSource="{Binding Items}" SelectedItem="{Binding Nombre, Mode=TwoWay}" ItemSelected="ListView_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Fill" Padding="10,10,10,10" >
+                                <Label Text = "{Binding Nombre}"  HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
             </ListView>
         </StackLayout>
     </Frame>

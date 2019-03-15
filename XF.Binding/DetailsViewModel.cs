@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Text;
 
@@ -7,7 +8,7 @@ namespace XF.Binding
 {
     public class DetailsViewModel : INotifyPropertyChanged
     {
-        string forename, surname, marco;
+        public string forename, surname, valor;
 
         public string Forename
         {
@@ -24,7 +25,6 @@ namespace XF.Binding
                 }
             }
         }
-
         public string Surname
         {
             get
@@ -40,22 +40,21 @@ namespace XF.Binding
                 }
             }
         }
-        public string Marco
+        public string Valor
         {
             get
             {
-                return marco;
+                return valor;
             }
             set
             {
-                if (marco != value)
+                if (valor != value)
                 {
-                    marco = value;
-                    OnPropertyChanged("Marco");
+                    valor = value;
+                    OnPropertyChanged("Valor");
                 }
             }
         }
-
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected virtual void OnPropertyChanged(string propertyName)
@@ -66,5 +65,7 @@ namespace XF.Binding
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
         }
+      
+       
     }
 }

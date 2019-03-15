@@ -5,12 +5,12 @@
              x:Class="XF.Binding.MainPage">
 
     <StackLayout Padding="20">
-        <Label Text="Data Binding 101 Demo" FontAttributes="Bold" HorizontalOptions="Center" />
+        <Label Text="Data Binding" FontAttributes="Bold" HorizontalOptions="Center" />
         <Label Text="Nombre:" />
         <Entry Text="{Binding Forename, Mode=TwoWay}" />
         <Label Text="Apellido:" />
         <Entry Text="{Binding Surname, Mode=TwoWay}" />
-        <StackLayout Padding="0,20,0,0" Orientation="Horizontal" VerticalOptions="Center">
+        <StackLayout  Orientation="Horizontal" VerticalOptions="Center">
             <Label Text="Yo soy" HorizontalOptions="Start"/>
             <Label Text="{Binding Forename}" HorizontalOptions="End"/>
             <Label Text="{Binding Surname}" HorizontalOptions="End"/>
@@ -18,14 +18,8 @@
         <Frame OutlineColor="Gray">
             <StackLayout Orientation="Vertical">
                 <Label Text="Result Dialog:" />
-                <Entry Text="{Binding Marco}" Placeholder="Click Aqui" Focused="Entry_Focused" x:Name="mytexto" />
+                <Entry Text="{Binding Valor,Mode=TwoWay}" Placeholder="Click Aqui" Focused="Entry_Focused" x:Name="mytexto" />
             </StackLayout>
         </Frame>
-
-
-
-
-
     </StackLayout>
-
 </ContentPage>

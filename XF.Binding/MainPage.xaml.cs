@@ -15,11 +15,15 @@ namespace XF.Binding
             InitializeComponent();
             BindingContext = new DetailsViewModel();
         }
-
+        
         private async void Entry_Focused(object sender, FocusEventArgs e)
         {
             mytexto.Unfocus();
+            
             await PopupNavigation.PushAsync(new Dialog() { CloseWhenBackgroundIsClicked = false });
+
+         
         }
+       
     }
 }
