@@ -20,7 +20,7 @@ namespace XF.Binding
         {
             mytexto.Unfocus();
             
-            await PopupNavigation.PushAsync(new Dialog() { CloseWhenBackgroundIsClicked = false });
+            await PopupNavigation.Instance.PushAsync(new Dialog() { CloseWhenBackgroundIsClicked = false });
 
          
         }

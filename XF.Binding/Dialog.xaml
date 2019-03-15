@@ -11,7 +11,7 @@
         <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
             <Label Text="Item Seleccionado:" />
             <Entry x:Name="EntValor" Text="{Binding Valor, Mode=TwoWay}" IsVisible="False"/>
-            <ListView x:Name="lvDatos" ItemsSource="{Binding Items}" SelectedItem="{Binding Nombre, Mode=TwoWay}" ItemSelected="ListView_ItemSelected">
+            <ListView x:Name="lvDatos" ItemSelected="ListView_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
