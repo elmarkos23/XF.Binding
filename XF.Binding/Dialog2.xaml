@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<popup:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+                 xmlns:popup="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 x:Class="XF.Binding.Dialog2"
+                 InputTransparent="False"
+                 HasSystemPadding="True"
+                 CloseWhenBackgroundIsClicked="False"
+                 Padding="20,100">
+    <Frame Padding="10" BackgroundColor="WhiteSmoke" VerticalOptions="Center" HorizontalOptions="Center">
+        <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <Label Text="Item Seleccionado:" />
+            <Entry x:Name="EntValor" Text="{Binding Valor, Mode=TwoWay}" IsVisible="False"/>
+            <ListView x:Name="lvDatos">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Fill" Padding="10,10,10,10" >
+                                <Label Text = "{Binding Nombre}"  HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </Frame>
+    </popup:PopupPage>

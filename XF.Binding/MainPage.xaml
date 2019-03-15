@@ -2,10 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:XF.Binding"
-             x:Class="XF.Binding.MainPage">
+             x:Class="XF.Binding.MainPage"
+             Title="Binding">
 
     <StackLayout Padding="20">
-        <Label Text="Data Binding" FontAttributes="Bold" HorizontalOptions="Center" />
         <Label Text="Nombre:" />
         <Entry Text="{Binding Forename, Mode=TwoWay}" />
         <Label Text="Apellido:" />
@@ -19,6 +19,12 @@
             <StackLayout Orientation="Vertical">
                 <Label Text="Result Dialog:" />
                 <Entry Text="{Binding Valor,Mode=TwoWay}" Placeholder="Click Aqui" Focused="Entry_Focused" x:Name="mytexto" />
+            </StackLayout>
+        </Frame>
+        <Frame OutlineColor="Gray">
+            <StackLayout Orientation="Vertical">
+                <Label Text="Result Dialog 2:" />
+                <Entry Text="{Binding Valor2,Mode=TwoWay}" Placeholder="Click Aqui" Focused="Mytexto2_Focused" x:Name="mytexto2" />
             </StackLayout>
         </Frame>
     </StackLayout>

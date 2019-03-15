@@ -11,7 +11,8 @@ namespace XF.Binding
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage());
+            BindingContext = new DetailsViewModel();
         }
 
         protected override void OnStart()

@@ -10,4 +10,4 @@ C:\Users\admin\Documents\GitHub\XF.Binding\XF.Binding\XF.Binding\obj\Debug\netst
 C:\Users\admin\Documents\GitHub\XF.Binding\XF.Binding\XF.Binding\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\admin\Documents\GitHub\XF.Binding\XF.Binding\XF.Binding\obj\Debug\netstandard2.0\XF.Binding.dll
 C:\Users\admin\Documents\GitHub\XF.Binding\XF.Binding\XF.Binding\obj\Debug\netstandard2.0\XF.Binding.pdb
-C:\Users\admin\Documents\GitHub\XF.Binding\XF.Binding\XF.Binding\obj\Debug\netstandard2.0\XF.Binding.csprojAssemblyReference.cache
+C:\Users\admin\Documents\GitHub\XF.Binding\XF.Binding\XF.Binding\obj\Debug\netstandard2.0\Dialog2.xaml.g.cs

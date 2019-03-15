@@ -8,25 +8,25 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("XF.Binding.MainPage.xaml", "MainPage.xaml", typeof(global::XF.Binding.MainPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("XF.Binding.Dialog2.xaml", "Dialog2.xaml", typeof(global::XF.Binding.Dialog2))]
 
 namespace XF.Binding {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("MainPage.xaml")]
-    public partial class MainPage : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Dialog2.xaml")]
+    public partial class Dialog2 : global::Rg.Plugins.Popup.Pages.PopupPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Entry mytexto;
+        private global::Xamarin.Forms.Entry EntValor;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Entry mytexto2;
+        private global::Xamarin.Forms.ListView lvDatos;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainPage));
-            mytexto = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "mytexto");
-            mytexto2 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "mytexto2");
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Dialog2));
+            EntValor = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "EntValor");
+            lvDatos = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "lvDatos");
         }
     }
 }

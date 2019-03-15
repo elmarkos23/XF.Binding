@@ -1,10 +1,12 @@
-﻿using Rg.Plugins.Popup.Services;
+﻿using Rg.Plugins.Popup.Extensions;
+using Rg.Plugins.Popup.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using static XF.Binding.Dialog2;
 
 namespace XF.Binding
 {
@@ -13,17 +15,26 @@ namespace XF.Binding
         public MainPage()
         {
             InitializeComponent();
-            BindingContext = new DetailsViewModel();
+            
         }
         
-        private async void Entry_Focused(object sender, FocusEventArgs e)
+        private void Entry_Focused(object sender, FocusEventArgs e)
         {
             mytexto.Unfocus();
+            fun();
             
-            await PopupNavigation.Instance.PushAsync(new Dialog() { CloseWhenBackgroundIsClicked = false });
-
          
         }
-       
+        private async void fun()
+        {
+            await PopupNavigation.Instance.PushAsync(new Dialog() { CloseWhenBackgroundIsClicked = false });
+
+        }
+
+        private async void Mytexto2_Focused(object sender, FocusEventArgs e)
+        {
+            mytexto2.Unfocus();
+           
+        }
     }
 }
